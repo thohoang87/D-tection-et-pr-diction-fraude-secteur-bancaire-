@@ -1,17 +1,18 @@
 # Détection et prédiction de la fraude dans le secteur bancaire
 
 ## 1 Introduction :  
-     La détection de fraude est une problématique courante dans de nombreux domaines, notamment les banques et le secteur financier, les assurances, dans le domaine social, judiciaire, et bien d'autres encore.  Au cours des dernières années, les tentatives de fraude ont connu une forte recrudescence, ce qui rend la lutte contre ce phénomène plus importante que jamais. 
+
+La détection de fraude est une problématique courante dans de nombreux domaines, notamment les banques et le secteur financier, les assurances, dans le domaine social, judiciaire, et bien d'autres encore.  Au cours des dernières années, les tentatives de fraude ont connu une forte recrudescence, ce qui rend la lutte contre ce phénomène plus importante que jamais. 
      
-     Afin de réaliser ces détections, les banques se focalisent aujourd’hui sur l’application de techniques d’intelligences artificielles. Ces algorithmes, qu’ils soient supervisés ou non, permettent d’identifier des comportements atypiques et suspects. 
+Afin de réaliser ces détections, les banques se focalisent aujourd’hui sur l’application de techniques d’intelligences artificielles. Ces algorithmes, qu’ils soient supervisés ou non, permettent d’identifier des comportements atypiques et suspects. 
      
-    Grâce aux différentes techniques et outils avancés de Machine Learning et/ou Deep Learning, nous pouvons détecter rapidement mais également anticiper les actes de fraude et prendre des mesures immédiates pour limiter leur impact financier. Du coup, ceci permet aux banques d’améliorer grandement leurs techniques de traitement des données, et indirectement de multiplier les bénéfices.
+Grâce aux différentes techniques et outils avancés de Machine Learning et/ou Deep Learning, nous pouvons détecter rapidement mais également anticiper les actes de fraude et prendre des mesures immédiates pour limiter leur impact financier. Du coup, ceci permet aux banques d’améliorer grandement leurs techniques de traitement des données, et indirectement de multiplier les bénéfices.
     
-     Cependant, La difficulté principale repose sur le déséquilibre des classes. Selon le rapport annuel 2019 de l’OSMP (2020), les transactions bancaires frauduleuses ne représentent que 0.001% des transactions, alors que le montant des transactions frauduleuses représente 1% des montants de transactions. Les données déséquilibrées complexifient les analyses prédictives et posent un véritable problème en Machine Learning et Deep Learning.
+ependant, La difficulté principale repose sur le déséquilibre des classes. Selon le rapport annuel 2019 de l’OSMP (2020), les transactions bancaires frauduleuses ne représentent que 0.001% des transactions, alors que le montant des transactions frauduleuses représente 1% des montants de transactions. Les données déséquilibrées complexifient les analyses prédictives et posent un véritable problème en Machine Learning et Deep Learning.
      
-      Afin de résoudre ces problèmes de déséquilibre des classes, nous optons pour  des méthodes de rééchantillonnage (re-sampling) qui consistent à modifier la distribution des données avant d’entraîner le modèle prédictif. Cela permet d’équilibrer les données pour faciliter la prédiction.
+Afin de résoudre ces problèmes de déséquilibre des classes, nous optons pour  des méthodes de rééchantillonnage (re-sampling) qui consistent à modifier la distribution des données avant d’entraîner le modèle prédictif. Cela permet d’équilibrer les données pour faciliter la prédiction.
       
-      L’objectif de cette étude est donc de mettre au point un modèle performant de détection de fraude bancaire.  
+L’objectif de cette étude est donc de mettre au point un modèle performant de détection de fraude bancaire.  
  
 ## 2 Analyse des données 
 ### 2.1 Description des données 
