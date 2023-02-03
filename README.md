@@ -8,7 +8,7 @@ Afin de réaliser ces détections, les banques se focalisent aujourd’hui sur l
      
 Grâce aux différentes techniques et outils avancés de Machine Learning et/ou Deep Learning, nous pouvons détecter rapidement mais également anticiper les actes de fraude et prendre des mesures immédiates pour limiter leur impact financier. Du coup, ceci permet aux banques d’améliorer grandement leurs techniques de traitement des données, et indirectement de multiplier les bénéfices.
     
-ependant, La difficulté principale repose sur le déséquilibre des classes. Selon le rapport annuel 2019 de l’OSMP (2020), les transactions bancaires frauduleuses ne représentent que 0.001% des transactions, alors que le montant des transactions frauduleuses représente 1% des montants de transactions. Les données déséquilibrées complexifient les analyses prédictives et posent un véritable problème en Machine Learning et Deep Learning.
+Cependant, la difficulté principale repose sur le déséquilibre des classes. Selon le rapport annuel 2019 de l’OSMP (2020), les transactions bancaires frauduleuses ne représentent que 0.001% des transactions, alors que le montant des transactions frauduleuses représente 1% des montants de transactions. Les données déséquilibrées complexifient les analyses prédictives et posent un véritable problème en Machine Learning et Deep Learning.
      
 Afin de résoudre ces problèmes de déséquilibre des classes, nous optons pour  des méthodes de rééchantillonnage (re-sampling) qui consistent à modifier la distribution des données avant d’entraîner le modèle prédictif. Cela permet d’équilibrer les données pour faciliter la prédiction.
       
