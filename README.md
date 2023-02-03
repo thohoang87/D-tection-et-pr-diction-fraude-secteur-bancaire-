@@ -32,18 +32,20 @@ Répartition de la distribution entre les deux classes de la variable cible « F
 
 On remarque bien qu'il y a un déséquilibre entre les deux classes. La variable cible a plus d'observations dans la classe d’acceptation de transactions. 
  
-###Graphique de corrélation : 
+### Graphique de corrélation : 
 
  <img width="454" alt="image" src="https://user-images.githubusercontent.com/114235978/216572013-b89f399a-3e21-4e95-af0d-e1ef52ee142d.png">
  
-###Corrélation positive : 
+### Corrélation positive : 
 
 D’après la matrice de corrélation, qui mesure le degré de relation linéaire entre chaque paire de variables, on constate que les variables les plus corrélées positivement avec la variable cible "FlagImpaye" sont VérifianceCPT2, VérifianceCPT3 et VérifianceCPT1. Elles désignent respectivement le nombre de transactions effectuées par le même identifiant bancaire au cours des trois derniers jours, le nombre de transactions effectuées par le même identifiant bancaire au cours des sept derniers jours et nombre de transactions effectuées par le même identifiant bancaire au cours du même jour. Ceci est interprétable comme suit : plus le nombre de transactions effectuées par le même identifiant bancaire au cours des trois derniers jours est élevé plus la transaction est susceptible d'être frauduleuse.  
 
-###Corrélation négative :  
-	Les variables les moins corrélées avec la variable cible "FlagImpaye" sont ScoringFP1, ScoringFP2 et ScoringFP3. 
-	La relation entre ScoringFP1 et la variable cible est négative. Plus le ScoringFP1 est élevé moins il y a risque de fraude.  
-	On aurait aimé tester d’autres types de corrélations mais ça ne fonctionne pas en raison de la volumétrie des données. 
+### Corrélation négative :  
+Les variables les moins corrélées avec la variable cible "FlagImpaye" sont ScoringFP1, ScoringFP2 et ScoringFP3. 
+
+La relation entre ScoringFP1 et la variable cible est négative. Plus le ScoringFP1 est élevé moins il y a risque de fraude.  
+
+On aurait aimé tester d’autres types de corrélations mais ça ne fonctionne pas en raison de la volumétrie des données. 
 
 ## 3 Méthodologie : 
 ### 3.1 Les algorithmes de rééchantillonnages : 
@@ -56,9 +58,9 @@ Dans ce cas de détection de fraude, on remarque que 99.12% des transactions eff
 Ceci pose de réelles difficultés aux algorithmes de Machine Learning et de Deep Learning et conduit surtout au sur apprentissage. 
 L’une des solutions pour traiter les données déséquilibrées est de les “rééquilibrer”. Ce type d’approches – appelées data-level solutions – se décline sous 2 formes principales : 
 
-	- Le sur-échantillonnage (oversampling) : Le nombre d’individus minoritaires est augmenté pour qu’ils aient plus d’importance lors de la modélisation. Différentes solutions sont possibles, comme le SMOTE, Adasyn, Random, etc. Pour notre cas, on a opté pour le SMOTE qui consiste à synthétiser des éléments de la classe minoritaire, sur la base de ceux qui existent déjà. Il sélectionne aléatoirement un point de la classe minoritaire et calcul les k-voisins les plus proches pour ce point. Les points synthétiques sont ajoutés entre le point choisi et ses voisins. 
+- Le sur-échantillonnage (oversampling) : Le nombre d’individus minoritaires est augmenté pour qu’ils aient plus d’importance lors de la modélisation. Différentes solutions sont possibles, comme le SMOTE, Adasyn, Random, etc. Pour notre cas, on a opté pour le SMOTE qui consiste à synthétiser des éléments de la classe minoritaire, sur la base de ceux qui existent déjà. Il sélectionne aléatoirement un point de la classe minoritaire et calcul les k-voisins les plus proches pour ce point. Les points synthétiques sont ajoutés entre le point choisi et ses voisins. 
   
-	- Le sous-échantillonnage (undersampling) : Parmi les individus majoritaires, on en retire une partie afin d’accorder plus d’importance aux individus minoritaires. Cette approche permet de diminuer la redondance des informations apportées par le grand nombre d’individus majoritaires. Pour notre cas, on a opté pour le Random Under Sampler. 
+- Le sous-échantillonnage (undersampling) : Parmi les individus majoritaires, on en retire une partie afin d’accorder plus d’importance aux individus minoritaires. Cette approche permet de diminuer la redondance des informations apportées par le grand nombre d’individus majoritaires. Pour notre cas, on a opté pour le Random Under Sampler. 
  
 ### 3.2 Algorithmes de prédiction utilisée : 
 - Random Forest
